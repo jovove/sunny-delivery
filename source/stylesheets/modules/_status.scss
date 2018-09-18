@@ -1,0 +1,10 @@
+.status {
+  width: 100%;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: auto;
+  background: url("/images/mod-delivery.png") center no-repeat;
+  background-size: contain;
+  border-left: 0.5px solid white;
+}

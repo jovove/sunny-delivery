@@ -1,0 +1,25 @@
+.header {
+  grid-area: header;
+  visibility: hidden;
+  height: 0px;
+  padding-bottom: 20px;
+
+  @media (max-width: 940px) {
+    visibility: visible;
+    height: auto;
+    font-size: 8px;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-template-rows: 1fr;
+    flex-direction: row;
+
+    p {
+      font-size: 8px;
+    }
+
+    img {
+      width: 80%;
+      height: auto;
+    }
+  }
+}
