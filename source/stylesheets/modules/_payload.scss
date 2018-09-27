@@ -6,15 +6,22 @@
   grid-template-rows: 40px 1fr;
   overflow: hidden;
 
+  @media (max-width: 600px) {
+    border-top: 0.5px solid white;
+  }
+
   .payload-courier {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    border-bottom: 0.5px solid white;
     padding-bottom: 20px;
 
     .active-courier {
       text-align: left;
+
+      @media (max-width: 600px) {
+        font-size: 10px;
+      }
     }
 
     .passive-courier {
@@ -22,7 +29,11 @@
       opacity: 0.5;
 
       @media (max-width: 940px) {
-        text-align: left;
+        float: right;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 10px;
       }
     }
   }
@@ -37,40 +48,68 @@
     grid-gap: 2px;
     background: url("/images/crosshair.png");
     background-repeat: repeat;
-    border-left: 0.5px solid white;
 
     p {
       margin-left: 10px;
     }
 
     .payload-big {
-      grid-column: 2 / 30;
-      grid-row: 2 / 100;
+      grid-column: 1 / 30;
+      grid-row: 1 / 100;
       background-color: $s-yellow;
+
+      @media (max-width: 600px) {
+        grid-column: 1 / 100;
+        grid-row: 1 / 30;
+      }
     }
 
     .payload-medium {
       grid-column: 30 / 55;
-      grid-row: 2 / 60;
+      grid-row: 1 / 60;
       background-color: $s-green;
+
+      @media (max-width: 600px) {
+        grid-column: 1 / 60;
+        grid-row: 30 / 55;
+      }
     }
 
     .payload-small {
       grid-column: 30 / 70;
       grid-row: 60 / 80;
       background-color: $s-red;
+
+      @media (max-width: 600px) {
+        grid-column: 60 / 100;
+        grid-row: 30 / 50;
+      }
     }
 
     .elliot {
       grid-column: 30 / 70;
       grid-row: 80 / 100;
       background-color: $s-red;
+
+      @media (max-width: 600px) {
+        grid-column: 60 / 100;
+        grid-row: 50 / 70;
+      }
     }
 
     .payload-xs {
       grid-column: 55 / 70;
-      grid-row: 2 / 60;
+      grid-row: 1 / 60;
       background-color: $s-white;
+
+      p {
+        color: $s-black;
+      }
+
+      @media (max-width: 600px) {
+        grid-column: 1 / 60;
+        grid-row: 55 / 70;
+      }
     }
   }
 }

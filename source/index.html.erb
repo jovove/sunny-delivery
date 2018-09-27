@@ -1,11 +1,14 @@
 ---
 title: Sunny Delivery
 ---
+<%= partial "partials/order" %>
+
+
 <div class="wrapper">
     <div class="header">
       <div class="header-logo">
         <img src="/images/sunny-logo.png" />
-</div>
+      </div>
       <div class="desc-eng">
         <p>STURDY DELIVERY SERVICE OPERATING THE AREA FKA SCANDINAVIA. WE SPECIALIZE IN DELIVERING HARD- AND BIOWARE. FOR RUSHED AND UNIQUE DELIVERIES, PLEASE TAKE A LOOK AT OUR SPECIAL CIRCUMSTANCES OPTION.</p>
       </div>
@@ -38,145 +41,22 @@ title: Sunny Delivery
 
 
   <div class="main">
-    <div class="container">
-      <div class="category">
-        <p>ACCOUNT |
-      </div>
-      <div class="account">
-        <p>Dominic Cobb</p>
-        <p>Midori Lane</p>
-        <p>Ometesando</p>
-        <p>dc@nullified.com</p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="category">
-        <p>HISTORY |
-      </div>
-      <div class="history">
-        <div class="date">
-          <div class="h-circle ok-delivery"></div>
-          <p>18.06.20</p>
-        </div>
-        <div class="date">
-          <div class="h-circle fail-delivery"></div>
-          <p>18.06.20</p>
-        </div>
-        <div class="date">
-          <div class="h-circle ongoing-delivery"></div>
-          <p>18.06.20</p>
-        </div>
-        <div class="date">
-          <div class="h-circle void-delivery"></div>
-          <p>18.06.20</p>
-        </div>
-        <div class="date">
-          <div class="h-circle fail-delivery"></div>
-          <p>18.06.20</p>
-        </div>
-        <div class="date">
-          <div class="h-circle ongoing-delivery"></div>
-          <p>18.06.20</p>
-        </div>
-        <div class="date">
-          <div class="h-circle ok-delivery"></div>
-          <p>18.06.20</p>
-        </div>
-        <div class="date">
-          <div class="h-circle ongoing-delivery"></div>
-          <p>18.06.20</p>
-        </div>
-        <div class="date">
-          <div class="h-circle fail-delivery"></div>
-          <p>18.06.20</p>
-        </div>
-        <div class="date">
-          <div class="h-circle ok-delivery"></div>
-          <p>18.06.20</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="category">
-        <p>STATUS |
-      </div>
-      <div class="status">
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="category">
-        <p>PAYLOAD |
-      </div>
-      <div class="payload">
-        <div class="payload-courier">
-          <p class="active-courier">
-            <img src="/images/circle-sm-ok.png" />
-            ACTIVE COURIER: J.LeCoultre</p>
-          <p class="passive-courier">
-            <img src="/images/circle-sm-fail.png" />
-            LOST COURIER: P.Phillippe</p>
-        </div>
-        <div class="payload-load">
-          <div class="payload-big">
-            <p>HARDWARE<br />94.4KG</p>
-          </div>
-          <div class="payload-medium">
-            <p>BIOWARE<br />30.4KG</p>
-          </div>
-          <div class="payload-small">
-            <p>SOFTWARE<br />9.49KG</p>
-          </div>
-          <div class="elliot">
-            <p>SOFTWARE<br />9.49KG</p>
-          </div>
-          <div class="payload-xs">
-            <p>OTHER<br />9.49KG</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="category">
-        <p>SUPPORT |
-      </div>
-      <div class="support">
-        <p>Hello world</p>
-      </div>
-    </div>
+    <%= partial "partials/account" %>
+    <%= partial "partials/history" %>
+    <%= partial "partials/status" %>
+    <%= partial "partials/payload" %>
+    <%= partial "partials/support" %>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   <div class="right">
-    <div class="order-btn"></div>
+<!--    <div id="myBtn" class="order_btn"></div> -->
+    <button id="myBtn">Open Modal</button>
+
   </div>
-  <div class="footer">footer</div>
+
+
+  <div class="footer">
+    <p>footer</p>
+  </div>
 </div>
