@@ -1,0 +1,68 @@
+.history {
+  width: 100%;
+  max-height: 80px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  flex-direction: row;
+  align-items: center;
+  /*
+  border-left: 0.5px solid white;
+  */
+  overflow-x: scroll;
+
+  @media (max-width: 960px) {
+    border-top: 0.5px solid white;
+    padding-top: 20px;
+  }
+
+  @media (max-width: 600px) {
+    height: 140px;
+    font-size: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.date {
+  display: grid;
+  justify-content: center;
+  opacity: 0.5;
+  margin-bottom: 30px;
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  p {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+.h-circle {
+  margin: 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+
+  &.ok-delivery {
+    background-color: $s-green;
+  }
+
+  &.ongoing-delivery {
+    background-color: $s-yellow;
+  }
+
+  &.fail-delivery {
+    background-color: $s-red;
+  }
+
+  &.void-delivery {
+    background-color: $void;
+  }
+}
